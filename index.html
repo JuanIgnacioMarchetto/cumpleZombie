@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Dante &nbsp;Te invita a su fiesta de Cumpleaños! en La Carmela</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+
+    <link href="style-invit.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600|Quicksand:700" rel="stylesheet">
+    <meta name="description" content="Viernes 25-10-2024 a las 13:00 - www.invitacionesvirtuales.net">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    
+    <style>
+        body {
+            background-color: #d1e7a2 !important; /* Verde claro, como césped */
+        }
+        .fondo-amarillo {
+            background-color: #7c5e42 !important; /* Marrón, simulando tierra */
+        }
+        .fondo-azul {
+            background-color: #6b8f23 !important; /* Verde oscuro de las plantas */
+            color: #fff;
+        }
+        .fondo-celeste {
+            background-color: #a0d2a5; /* Verde más claro */
+        }
+        .fondo-rojo {
+            background-color: #4d4d4d !important; /* Gris oscuro, como zombies */
+            color: #fff;
+        }
+        .txt-amarillo {
+            color: #ffcc00;
+        }
+        .txt-azul {
+            color: #6b8f23; /* Verde oscuro de las plantas */
+        }
+        .txt-celeste {
+            color: #a0d2a5 !important; /* Verde más claro */
+        }
+        .txt-rojo {
+            color: #4d4d4d !important; /* Gris oscuro */
+        }
+        .blanconegro {
+            color: #ffffff !important;
+        }
+        .btn-rojo {
+            background-color: #4d4d4d !important; /* Gris zombies */
+        }
+        .btn-azul {
+            background-color: #6b8f23 !important; /* Verde oscuro */
+        }
+        .btn-celeste {
+            background-color: #a0d2a5 !important; /* Verde claro */
+        }
+        .btn-blanco {
+            background-color: #ffffff !important;
+        }
+        .btn-blanco a {
+            color: #000000 !important;
+        }
+        .cuentaregresiva {
+            color: #ffffff;
+        }
+        .foto p {
+            color: #FFFFFF;
+            text-shadow: #000 0px 0px 5px, #000 0px 0px 10px, #000 0px 0px 15px;
+        }
+        .foto {
+            padding: 30px 0px 0 0px !important;
+            background-image: url('https://example.com/plants-vs-zombies-theme.jpg'); /* Imagen temática */
+        }
+        .map {
+            border: solid 3px #4d4d4d;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="cont">
+        <div class="foto" style="top:200px; position:absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; width: 100%; max-width: 360px;"> 
+            <p class="teinvita tnombre" style="padding-top: 168px !important; display: block;">
+                ¡Te invita a su fiesta <br> de Cumpleaños<br> en...
+            </p> 
+        </div>
+
+        <div class="foto" style="background-image:url(https://c.tenor.com/KZDQvfOD9PwAAAAd/tenor.gif); z-index:66;">
+            <h1 class="name tnombre" style="z-index: 120; margin-top: -20px !important; display: block;">Dante<br><br></h1>
+            <div id="MENU"></div>
+        </div>
+
+        <div class="block fondo-azul">
+            <div class="logo"><img src="../assets/lacarmela-logo.png" alt="La Carmela"></div> 
+            <div class="blanconegro">
+                <p>El día<br>
+                <span class="fecha txt-celeste">Viernes 25 de octubre de 2024</span><br>
+                de 13:00 a 16:00hs.</p>
+            </div>
+
+            <div class="boton btn-rojo">
+                <a href="https://calendar.google.com/calendar/r/day/2024/10/25" target="_blank" class="textobotonesprincipales">
+                    <i class="fa fa-calendar-o textobotonesprincipales" aria-hidden="true"></i> Agendalo!
+                </a>
+            </div>
+
+            <div id="getting-started" style="font-size:30px!important; width:230px; text-align:center; margin:auto;" class="cuentaregresiva">Faltan 00 días 00:00:00</div><br>
+        </div>
+
+        <div class="block fotos fondofotos">
+            <p>Fotos del salón<br>
+            <strong class="salon txt-rojo" style="text-transform:uppercase;">La Carmela</strong></p>
+            <img src="../assets/photo0.jpg" alt="La Carmela">
+            <img src="../assets/photo2_50.jpg" alt="La Carmela">
+            <img src="../assets/photo3_54.jpg" alt="La Carmela">
+            <img src="../assets/photo8_19.jpg" alt="La Carmela">
+
+            <div class="boton btn-celeste">
+                <a href="http://laguiainfantil.com/lacarmela.html" target="_blank"><img src="images/icon-photo.png">Más Fotos</a>
+            </div>
+        </div>
+
+        <div class="block fondo-amarillo">
+            <p>Bynnon 2615<br>José Marmol</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6553.342147424061!2d-58.37365199999999!3d-34.789055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3337cfc9b75%3A0x71aaaa7eb23986cb!2sJorge+Santiago+Bynnon+2615%2C+Jos%C3%A9+Marmol%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1548855110933" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            </div>
+
+            <div class="boton botongps">
+                <a href="https://www.google.com/maps/place/Jorge+Santiago+Bynnon+2615,+Jos%C3%A9+Marmol,+Buenos+Aires/@-34.789055,-58.3736519,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcd3337cfc9b75:0x71aaaa7eb23986cb!8m2!3d-34.7890598!4d-58.3714632?hl=es-419" target="_blank" class="textobotongps"><i class="fa fa-map-marker"></i> GPS</a>
+            </div>
+        </div>
+    </div>
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/h3Crju8NEM4?autoplay=1&mute=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <script type="text/javascript">
+       $(document).ready(function() {
+          $("#getting-started")
+          .countdown("2024-10-25 13:00:00", function(event) {
+            $(this).text(
+              event.strftime('Faltan %D días %H:%M:%S ')
+            );
+          });
+        });
+    </script>
+</body>
+</html>
