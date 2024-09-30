@@ -4,15 +4,13 @@
     <meta charset="utf-8">
     <title>Dante &nbsp;Te invita a su fiesta de Cumpleaños! en La Carmela</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
-
+    
     <link href="style-invit.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600|Quicksand:700" rel="stylesheet">
-    <meta name="description" content="Viernes 25-10-2024 a las 13:00 - www.invitacionesvirtuales.net">
+    <meta name="description" content="Viernes 25-10-2024 a las 12:30 - www.invitacionesvirtuales.net">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    
+
     <style>
         body {
             background-color: #d1e7a2 !important; /* Verde claro, como césped */
@@ -75,15 +73,22 @@
         .map {
             border: solid 3px #4d4d4d;
         }
+        h1.name {
+            color: red; /* Cambia el color de Dante a rojo */
+            margin-top: 10px !important; /* Mueve unos píxeles más abajo */
+        }
+        .btn-celeste img {
+            width: 100px;
+            height: auto;
+        }
     </style>
-    
 </head>
 <body>
     <div class="cont">
-        <div class="foto" style="top:200px; position:absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; width: 100%; max-width: 360px;"> 
+        <div class="foto" style="top:200px; position:absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; width: 100%; max-width: 360px;">
             <p class="teinvita tnombre" style="padding-top: 168px !important; display: block;">
                 ¡Te invita a su fiesta <br> de Cumpleaños<br> en...
-            </p> 
+            </p>
         </div>
 
         <div class="foto" style="background-image:url(https://c.tenor.com/KZDQvfOD9PwAAAAd/tenor.gif); z-index:66;">
@@ -92,11 +97,11 @@
         </div>
 
         <div class="block fondo-azul">
-            <div class="logo"><img src="../assets/lacarmela-logo.png" alt="La Carmela"></div> 
+            <div class="logo"><img src="../assets/lacarmela-logo.png" alt="La Carmela"></div>
             <div class="blanconegro">
                 <p>El día<br>
                 <span class="fecha txt-celeste">Viernes 25 de octubre de 2024</span><br>
-                de 13:00 a 16:00hs.</p>
+                de 12:30 a 15:30hs.</p>
             </div>
 
             <div class="boton btn-rojo">
@@ -117,32 +122,61 @@
             <img src="../assets/photo8_19.jpg" alt="La Carmela">
 
             <div class="boton btn-celeste">
-                <a href="http://laguiainfantil.com/lacarmela.html" target="_blank"><img src="images/icon-photo.png">Más Fotos</a>
+                <a href="http://laguiainfantil.com/lacarmela.html" target="_blank">Más Fotos</a>
             </div>
         </div>
 
         <div class="block fondo-amarillo">
             <p>Bynnon 2615<br>José Marmol</p>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6553.342147424061!2d-58.37365199999999!3d-34.789055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3337cfc9b75%3A0x71aaaa7eb23986cb!2sJorge+Santiago+Bynnon+2615%2C+Jos%C3%A9+Marmol%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1548855110933" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13106.682117589959!2d-58.373926!3d-34.7890687!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3335dbb9655%3A0x5df722b3f2f483c2!2sLa%20Carmela!5e0!3m2!1ses!2sar!4v1727716342310!5m2!1ses!2sar" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <div class="boton botongps">
-                <a href="https://www.google.com/maps/place/Jorge+Santiago+Bynnon+2615,+Jos%C3%A9+Marmol,+Buenos+Aires/@-34.789055,-58.3736519,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcd3337cfc9b75:0x71aaaa7eb23986cb!8m2!3d-34.7890598!4d-58.3714632?hl=es-419" target="_blank" class="textobotongps"><i class="fa fa-map-marker"></i> GPS</a>
+                <a href="https://www.google.com/maps/place/La+Carmela/@-34.7890687,-58.373926,15z/data=!4m2!3m1!1s0x0:0x5df722b3f2f483c2?sa=X&ved=1t:2428&ictx=111" target="_blank">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>¿Cómo llegar?
+                </a>
+            </div>
+        </div>
+
+        <div class="block fondo-azul">
+            <div class="boton btn-celeste" id="confirmar-asistencia">
+                <a href="https://api.whatsapp.com/send?phone=5491165470238&text=Buenas...quisiera%20un%20turno%20con%20vos.." class="float" target="_blank">
+                    <i class="fa fa-whatsapp my-float">Comfirmar asistencia</i>
+                  </a>
             </div>
         </div>
     </div>
-    <iframe width="0" height="0" src="https://www.youtube.com/embed/h3Crju8NEM4?autoplay=1&mute=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-    <script type="text/javascript">
-       $(document).ready(function() {
-          $("#getting-started")
-          .countdown("2024-10-25 13:00:00", function(event) {
-            $(this).text(
-              event.strftime('Faltan %D días %H:%M:%S ')
-            );
-          });
-        });
+    <script>
+        // Función para iniciar la cuenta regresiva
+        function startCountdown(endTime) {
+            const countdownElement = document.getElementById('getting-started');
+            const countdownInterval = setInterval(() => {
+                const now = new Date();
+                const distance = endTime - now;
+
+                if (distance < 0) {
+                    clearInterval(countdownInterval);
+                    countdownElement.innerText = "¡Es hora de la fiesta!";
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                countdownElement.innerText = `Faltan ${days} días ${hours}:${minutes}:${seconds}`;
+            }, 1000);
+        }
+
+       
+
+        // Iniciar cuenta regresiva
+        const eventDate = new Date("2024-10-25T12:30:00");
+        startCountdown(eventDate);
     </script>
 </body>
 </html>
+
